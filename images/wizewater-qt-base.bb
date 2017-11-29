@@ -11,6 +11,8 @@ QT_TOOLS = " \
     qtbase \
     qt5-env \
     qtserialport \
+    qtwebengine \
+    qtwebengine-qmlplugins \
 "
 
 FONTS = " \
@@ -29,10 +31,6 @@ TSLIB = " \
 IMAGE_INSTALL += " \
     ${FONTS} \
     ${QT_TOOLS} \
-    qcolorcheck \
-    qfontchooser \
-    qkeytest \
-    qshowfonts \
     ${TSLIB} \
     tspress \
 "
