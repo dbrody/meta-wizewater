@@ -29,6 +29,8 @@ WIFI_SUPPORT = " \
 
 DEV_SDK_INSTALL = " \
     git \
+    libstdc++ \
+    libstdc++-dev \
 "
 
 DEV_EXTRAS = " \
