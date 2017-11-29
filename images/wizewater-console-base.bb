@@ -29,8 +29,6 @@ WIFI_SUPPORT = " \
 
 DEV_SDK_INSTALL = " \
     git \
-    libstdc++ \
-    libstdc++-dev \
 "
 
 DEV_EXTRAS = " \
@@ -41,40 +39,19 @@ DEV_EXTRAS = " \
 "
 
 EXTRA_TOOLS_INSTALL = " \
-    bzip2 \
-    devmem2 \
     ethtool \
-    firewall \
     i2c-tools \
-    iperf3 \
-    iproute2 \
-    iptables \
-    less \
-    memtester \
     nano \
-    netcat \
-    procps \
-    rsync \
-    sysfsutils \
-    tcpdump \
-    unzip \
-    util-linux \
-    wget \
-    zip \
 "
 
 CAN_TOOLS = " \
-    canutils \
 "
 
 RPI_STUFF = " \
     bcm2835-tests \
-    omxplayer \
-    pi-blaster \
     raspi2fb \
     rpio \
     rpi-gpio \
-    userland \
     wiringpi \
 "
 
