@@ -30,3 +30,4 @@ This layer depends on:
 + QtCoAP - https://github.com/t-mon/qtcoap
 + https://www.iot-lab.info/
 + https://www.boredpanda.com/house-painting-90-year-old-grandma-agnes-kasparkova/
++ http://fritzing.org/
