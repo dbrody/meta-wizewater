@@ -5,10 +5,6 @@ LICENSE = "MIT"
 require wizewater-qt-base.bb
 
 IMAGE_INSTALL += " \
-    iotivity \
-    iotivity-dev \
-    iotivity-resource-samples \
-    iotivity-service-samples \
     packagegroup-iotivity \
 "
 
