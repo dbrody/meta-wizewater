@@ -9,6 +9,7 @@ QT_DEV_TOOLS = " \
 
 QT_TOOLS = " \
     qtbase \
+    qtbase-plugins \
     qt5-env \
     qtserialport \
     qtwebengine \

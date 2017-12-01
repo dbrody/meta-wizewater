@@ -1,0 +1,5 @@
+Some custom targets are
+
+    wizewater-console-base
+    wizewater-qt-base
+    wizewater-qt-iotivity
