@@ -10,7 +10,7 @@ PR = "r1"
 SRCREV = "${AUTOREV}"
 SRC_URI = "git://github.com/dbrody/qt-iotivity-demo.git"
 
-S = "${WORKDIR}/qt-iotivity-demo"
+S = "${WORKDIR}/git"
 
 require recipes-qt/qt5/qt5.inc
 
