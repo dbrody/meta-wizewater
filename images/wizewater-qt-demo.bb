@@ -5,20 +5,20 @@ LICENSE = "MIT"
 require wizewater-qt-base.bb
 
 QT_EXTRAS = " \
-    qt3d \
-    qtcharts \
-    qtdeclarative \
-    qtgraphicaleffects \
-    qtgraphicaleffects-qmlplugins \
-    qtlocation-plugins \
-    qtmultimedia \
-    qtquickcontrols2 \
-    qtsensors-plugins \
-    qtserialbus \
-    qtsvg \
-    qtwebsockets-qmlplugins \
-    qtvirtualkeyboard \
-    qtxmlpatterns \
+  qt3d \
+  qtcharts \
+  qtdeclarative \
+  qtgraphicaleffects \
+  qtgraphicaleffects-qmlplugins \
+  qtlocation-plugins \
+  qtmultimedia \
+  qtquickcontrols2 \
+  qtsensors-plugins \
+  qtserialbus \
+  qtsvg \
+  qtwebsockets-qmlplugins \
+  qtvirtualkeyboard \
+  qtxmlpatterns \
 "
 
 QT_DEMOS = " \

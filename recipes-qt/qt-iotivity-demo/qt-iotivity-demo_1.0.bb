@@ -33,4 +33,3 @@ FILES_${PN} = "${bindir}"
 
 RDEPENDS_${PN} = "qtbase-plugins iotivity-resource iotivity-service"
 BBCLASSEXTEND = "native nativesdk"
-
