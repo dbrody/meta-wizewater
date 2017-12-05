@@ -10,7 +10,7 @@ PR = "r1"
 SRCREV = "${AUTOREV}"
 SRC_URI = "file://wizewater-group-controller.tar.gz"
 
-S = "${WORKDIR}/git"
+S = "${WORKDIR}/wizewater-group-controller"
 
 require recipes-qt/qt5/qt5.inc
 
