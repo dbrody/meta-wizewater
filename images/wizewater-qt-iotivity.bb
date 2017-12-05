@@ -9,6 +9,7 @@ IMAGE_INSTALL += " \
     iotivity-simple-client \
     iotivity-sensorboard \
     qt-iotivity-demo \
+    water-control \
 "
 
 export IMAGE_BASENAME = "wizewater-qt-iotivity"
