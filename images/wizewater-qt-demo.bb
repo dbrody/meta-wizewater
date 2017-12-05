@@ -8,8 +8,6 @@ QT_EXTRAS = " \
     qt3d \
     qtcharts \
     qtdeclarative \
-    qtdeclarative-plugins \
-    qtdeclarative-qmlplugins \
     qtgraphicaleffects \
     qtgraphicaleffects-qmlplugins \
     qtlocation-plugins \
