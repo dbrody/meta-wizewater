@@ -4,7 +4,17 @@ LICENSE = "MIT"
 
 require wizewater-qt-base.bb
 
+QT_EXTRAS = " \
+  qtdeclarative \
+  qtquickcontrols2 \
+  qtsensors-plugins \
+  qtserialbus \
+  qtvirtualkeyboard \
+  qtxmlpatterns \
+"
+
 IMAGE_INSTALL += " \
+    ${QT_EXTRAS} \
     packagegroup-iotivity \
     iotivity-simple-client \
     iotivity-sensorboard \
