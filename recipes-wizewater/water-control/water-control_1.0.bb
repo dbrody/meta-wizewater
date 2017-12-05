@@ -8,7 +8,7 @@ DEPENDS += "qtbase iotivity"
 PR = "r1"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "file://wizewater-group-controller.zip"
+SRC_URI = "file://wizewater-group-controller.tar.gz"
 
 S = "${WORKDIR}/git"
 
