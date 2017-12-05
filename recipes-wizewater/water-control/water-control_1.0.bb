@@ -3,7 +3,7 @@ HOMEPAGE = "http://www.wizewater.us"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-DEPENDS += "qtbase iotivity"
+DEPENDS += "qtbase qtdeclarative iotivity"
 
 PR = "r1"
 
@@ -30,5 +30,5 @@ do_install() {
 
 FILES_${PN} = "${bindir}"
 
-RDEPENDS_${PN} = "qtbase-plugins iotivity-resource iotivity-service"
+RDEPENDS_${PN} = "qtbase-plugins qtdeclarative-qmlplugins iotivity-resource iotivity-service"
 BBCLASSEXTEND = "native nativesdk"
