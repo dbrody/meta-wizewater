@@ -6,7 +6,9 @@ require wizewater-qt-base.bb
 
 QT_EXTRAS = " \
   qtdeclarative \
+  qtdeclarative-qmlplugins \
   qtquickcontrols2 \
+  qtquickcontrols-qmlplugins \
   qtsensors-plugins \
   qtserialbus \
   qtvirtualkeyboard \
