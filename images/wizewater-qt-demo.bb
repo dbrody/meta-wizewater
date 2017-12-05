@@ -4,6 +4,10 @@ LICENSE = "MIT"
 
 require wizewater-qt-base.bb
 
+WIZEWATER_APPS = " \
+  water-control \
+"
+
 QT_EXTRAS = " \
   qt3d \
   qtcharts \
@@ -38,6 +42,7 @@ IMAGE_INSTALL += " \
     iotivity-simple-client \
     iotivity-sensorboard \
     qt-iotivity-demo \
+    ${WIZEWATER_APPS} \
 "
 
 export IMAGE_BASENAME = "wizewater-qt-demo"
