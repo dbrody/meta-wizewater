@@ -9,6 +9,8 @@ QT_EXTRAS = " \
   qtdeclarative-qmlplugins \
   qtquickcontrols2 \
   qtquickcontrols-qmlplugins \
+  qtgraphicaleffects \
+  qtgraphicaleffects-qmlplugins \
   qtsensors-plugins \
   qtserialbus \
   qtvirtualkeyboard \
