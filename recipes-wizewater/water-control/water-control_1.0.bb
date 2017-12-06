@@ -8,9 +8,9 @@ DEPENDS += "qtbase qtdeclarative iotivity"
 PR = "r1"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "file://wizewater-group-controller.tar.gz"
+SRC_URI = "git@github.com:dbrody/water-control.git"
 
-S = "${WORKDIR}/wizewater-group-controller"
+S = "${WORKDIR}/git/station-group-controller/src"
 
 require recipes-qt/qt5/qt5.inc
 
