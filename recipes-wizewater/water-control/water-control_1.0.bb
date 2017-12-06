@@ -3,11 +3,18 @@ HOMEPAGE = "http://www.wizewater.us"
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
-DEPENDS += "qtbase qtdeclarative iotivity"
+DEPENDS += " \
+  qtbase \
+  qtdeclarative \
+  qtgraphicaleffects \
+  iotivity \
+"
 
 PR = "r1"
 
 SRCREV = "${AUTOREV}"
+PVBASE := "${PV}"
+PV = "${PVBASE}+${SRCPV}"
 SRC_URI = "git://git@github.com/dbrody/water-control.git;protocol=ssh"
 
 S = "${WORKDIR}/git/station-group-controller/src"
@@ -30,5 +37,11 @@ do_install() {
 
 FILES_${PN} = "${bindir}"
 
-RDEPENDS_${PN} = "qtbase-plugins qtdeclarative-qmlplugins iotivity-resource iotivity-service"
+RDEPENDS_${PN} = " \
+  qtbase-plugins \
+  qtdeclarative-qmlplugins \
+  qtgraphicaleffects-qmlplugins  \
+  iotivity-resource \
+  iotivity-service \
+"
 BBCLASSEXTEND = "native nativesdk"

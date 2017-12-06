@@ -2,7 +2,7 @@ SUMMARY = "Wizewater Console Base Image"
 HOMEPAGE = "http://www.wizewater.us"
 LICENSE = "MIT"
 
-IMAGE_FEATURES += "package-management splash"
+IMAGE_FEATURES += " package-management splash"
 IMAGE_LINGUAS = "en-us"
 
 inherit core-image

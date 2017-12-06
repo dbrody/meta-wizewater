@@ -4,9 +4,9 @@ LICENSE = "MIT"
 
 require wizewater-console-base.bb
 
-DISTRO_FEATURES_remove = "x11 wayland"
+DISTRO_FEATURES_remove = " x11 wayland"
 
-EXTRA_IMAGE_FEATURES = "debug-tweaks ssh-server-openssh "
+EXTRA_IMAGE_FEATURES = " debug-tweaks ssh-server-openssh "
 
 QT_DEV_TOOLS = " \
 "
