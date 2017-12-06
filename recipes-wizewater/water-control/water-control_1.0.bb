@@ -8,7 +8,7 @@ DEPENDS += "qtbase qtdeclarative iotivity"
 PR = "r1"
 
 SRCREV = "${AUTOREV}"
-SRC_URI = "git@github.com:dbrody/water-control.git"
+SRC_URI = "git://git@github.com:dbrody/water-control.git;protocol=ssh"
 
 S = "${WORKDIR}/git/station-group-controller/src"
 
