@@ -25,17 +25,21 @@ require recipes-qt/qt5/qt5.inc
 inherit pkgconfig
 
 do_compile_prepend() {
-    export PKG_CONFIG_PATH="${PKG_CONFIG_PATH}"
-    export PKG_CONFIG="PKG_CONFIG_SYSROOT_DIR=\"${PKG_CONFIG_SYSROOT_DIR}\" pkg-config"
-    export LD_FLAGS="${LD_FLAGS}"
-    export LDLIBS_IOTIVITY=$(shell $(PKG_CONFIG) iotivity --libs)
-    export LDLIBS_WIRINGPI=$(shell $(PKG_CONFIG) wiringpi --libs)
-    export LDLIBS="#{LDLIBS_IOTIVITY} ${LDLIBS_WIRINGPI}"
+  # Remove wiringPi.h placeholder
+  rm ${S}/wiringPi.h
+
+  # Build Settings
+  export PKG_CONFIG_PATH="${PKG_CONFIG_PATH}"
+  export PKG_CONFIG="PKG_CONFIG_SYSROOT_DIR=\"${PKG_CONFIG_SYSROOT_DIR}\" pkg-config"
+  export LD_FLAGS="${LD_FLAGS}"
+  export LDLIBS_IOTIVITY=$(shell $(PKG_CONFIG) iotivity --libs)
+  export LDLIBS_WIRINGPI=$(shell $(PKG_CONFIG) wiringpi --libs)
+  export LDLIBS="#{LDLIBS_IOTIVITY} ${LDLIBS_WIRINGPI}"
 }
 
 do_install() {
-    install -d ${D}${bindir}
-    install -m 0755 ${B}/station-group-controller ${D}${bindir}
+  install -d ${D}${bindir}
+  install -m 0755 ${B}/station-group-controller ${D}${bindir}
 }
 
 FILES_${PN} = "${bindir}"
@@ -46,6 +50,5 @@ RDEPENDS_${PN} = " \
   qtgraphicaleffects-qmlplugins  \
   iotivity-resource \
   iotivity-service \
-  wiringpi \
 "
 BBCLASSEXTEND = "native nativesdk"
