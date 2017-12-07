@@ -44,5 +44,6 @@ RDEPENDS_${PN} = " \
   qtgraphicaleffects-qmlplugins  \
   iotivity-resource \
   iotivity-service \
+  wiringpi \
 "
 BBCLASSEXTEND = "native nativesdk"
