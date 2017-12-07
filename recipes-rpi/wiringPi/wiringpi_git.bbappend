@@ -1,4 +1,8 @@
 
+make_dir() {
+    install -d $1
+}
+
 copy_file_recursive() {
     cd $1 && find . -type d -exec install -d $2/"{}" \;
     cd $1 && find . -type f -exec install -c -m 444 "{}" $2/"{}" \;
