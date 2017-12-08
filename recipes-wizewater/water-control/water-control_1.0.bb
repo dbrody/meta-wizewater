@@ -26,8 +26,8 @@ inherit pkgconfig
 
 do_compile_prepend() {
   # Remove wiringPi.h/cpp placeholder
-  rm ${S}/wiringPi.h
-  rm ${S}/wiringPi.cpp
+  rm -f ${S}/wiringPi.h
+  rm -f ${S}/wiringPi.cpp
 
   # Build Settings
   export PKG_CONFIG_PATH="${PKG_CONFIG_PATH}"
