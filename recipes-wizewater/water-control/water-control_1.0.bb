@@ -22,7 +22,7 @@ S = "${WORKDIR}/git/station-group-controller/src"
 
 require recipes-qt/qt5/qt5.inc
 
-inherit autotools pkgconfig
+inherit pkgconfig
 
 do_compile_prepend() {
   # Remove wiringPi.h/cpp placeholder
