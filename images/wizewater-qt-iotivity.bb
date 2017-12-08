@@ -22,7 +22,6 @@ IMAGE_INSTALL += " \
     packagegroup-iotivity \
     iotivity-simple-client \
     iotivity-sensorboard \
-    qt-iotivity-demo \
     water-control \
 "
 
