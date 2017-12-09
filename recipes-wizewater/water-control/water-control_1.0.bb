@@ -22,23 +22,25 @@ S = "${WORKDIR}/git/station-group-controller/src"
 
 require recipes-qt/qt5/qt5.inc
 
-inherit autotools pkgconfig
+inherit pkgconfig
 
-do_compile_prepend() {
+do_configure_prepend() {
   # Remove wiringPi.h/cpp placeholder
   rm -f ${S}/wiringPi.h
   rm -f ${S}/wiringPi.cpp
+}
 
+do_compile_prepend() {
   # Build Settings
   export PKG_CONFIG_PATH="${PKG_CONFIG_PATH}"
   export PKG_CONFIG="PKG_CONFIG_SYSROOT_DIR=\"${PKG_CONFIG_SYSROOT_DIR}\" pkg-config"
   export LD_FLAGS="${LD_FLAGS}"
-  export LDLIBS_IOTIVITY=$(shell $(PKG_CONFIG) iotivity --libs)
-  export LDLIBS_WIRINGPI=$(shell $(PKG_CONFIG) wiringpi --libs)
-  export LDLIBS="#{LDLIBS_IOTIVITY} ${LDLIBS_WIRINGPI}"
+  # export LDLIBS_IOTIVITY=$(shell $(PKG_CONFIG) iotivity --libs)
+  # export LDLIBS_WIRINGPI=$(shell $(PKG_CONFIG) wiringpi --libs)
+  # export LDLIBS="#{LDLIBS_IOTIVITY} ${LDLIBS_WIRINGPI}"
 }
 
-do_install() {
+do_install_append() {
   install -d ${D}${bindir}
   install -m 0755 ${B}/station-group-controller ${D}${bindir}
 }
