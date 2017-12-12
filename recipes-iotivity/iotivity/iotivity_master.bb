@@ -321,7 +321,7 @@ do_install_append() {
     #Installed headers
     make_dir ${D}${includedir}
     copy_file_recursive \
-       ${S}/out/yocto/${IOTIVITY_TARGET_ARCH}/release/include \
+       ${S}/out/yocto/${IOTIVITY_TARGET_ARCH}/release/deploy/include \
        ${D}${includedir}/iotivity
     ln -s iotivity/resource ${D}${includedir}/resource
     ln -s iotivity/service ${D}${includedir}/service
